@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 simpleguics2pygame = "*"
-pytest = "*"
+
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.11"
