@@ -4,6 +4,10 @@ Monte Carlo chess module, plays a chess game with random move generation to find
 
 import random
 import chessClass as chessgame
+import chessGui as chess_gui
+
+DEPTH = 2
+TRIALS = 10
 
 def monte_carlo(board, team, depth, trials):
     """
@@ -92,8 +96,8 @@ def play_game(depth, trials):
     else:
         print ("Error: unknown winner")
 
-# play_game(3,10)
-# chess_gui.run_gui(8, monte_carlo, 3, 3)
+# play_game(DEPTH, TRIALS)
+chess_gui.run_gui(ai_function=monte_carlo, depth=DEPTH, trials=TRIALS)
 
 
 

@@ -241,12 +241,11 @@ class ChessGUI:
         return (posy // self._bar_spacing,
                 posx // self._bar_spacing)
 
-def run_gui(board_size, ai_function=None, depth=None, trials=None):
+def run_gui(board_size=8, ai_function=None, depth=None, trials=None):
     """
     Make a GUI object and run the game!
     """
     gui = ChessGUI(board_size, ai_function, depth, trials)
     gui.start()
 
-# run_gui = ChessGUI(8)
-# gui.start()
+# run_gui = ChessGUI()
