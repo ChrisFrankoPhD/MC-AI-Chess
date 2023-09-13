@@ -1,4 +1,4 @@
-# McChess
+# Monte-Carlo AI Chess
 
 - Play chess against a Monte Carlo AI opponent, written in Python
 
